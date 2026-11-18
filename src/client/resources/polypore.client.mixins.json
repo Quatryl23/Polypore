@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.mesomods.polypore.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "ModelProviderItemInfoCollectorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "net.mesomods.polypore.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "BlocksMixin",
+    "FlowerPotBlockAccessor",
+    "ShelfMushroomBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}

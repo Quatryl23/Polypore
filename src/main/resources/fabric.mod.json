@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "polypore",
+	"version": "${version}",
+	"name": "Polypore",
+	"description": "Display your favorite items and blocks on Shelf Mushrooms",
+	"authors": [
+		"RiRa",
+		"Mesophil"
+	],
+	"license": "MIT",
+	"icon": "assets/polypore/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mesomods.polypore.Polypore"
+		],
+		"client": [
+			"net.mesomods.polypore.client.PolyporeClient"
+		],
+		"fabric-datagen": [
+			"net.mesomods.polypore.client.OnShelfMushroomModelGenerator"
+		]
+	},
+	"mixins": [
+		"polypore.mixins.json",
+		{
+			"config": "polypore.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "${minecraft_version_range}",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
